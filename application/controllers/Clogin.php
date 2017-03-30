@@ -32,7 +32,7 @@ class Clogin extends CI_Controller
     }else {
 
       $usu = $this->input->post('txtUsuario');
-      $pass = $this->input->post('txtPassword');
+      $pass = sha1($this->input->post('txtPassword'));
       $res = $this->Mlogin->ingresar($usu, $pass);
       if ($res == true) {
         $this->cargarvista();
@@ -49,8 +49,18 @@ class Clogin extends CI_Controller
   {
     $this->load->view('layout/header');
       $this->load->view('layout/menu');
-      $this->load->view('layout/principal');
+  //    $this->load->view('layout/principal');
       $this->load->view('layout/footer');
+  }
+
+  public function cerrarSesion()
+  {
+    $s_usuario = array(
+      's_logeado' => false
+    );
+    $data['mensaje'] = '';
+    $this->session->set_userdata($s_usuario);
+    $this->load->view('vlogin' , $data);
   }
 }
 
