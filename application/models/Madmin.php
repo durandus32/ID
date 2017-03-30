@@ -62,6 +62,20 @@ public function reloadSession($usuario)
   );
   $this->session->set_userdata($s_usuario);
 }
+public function getUserNames()
+{
+  $this->db->SELECT('id_admin, userName');
+  $this->db->FROM('admin');
+  $s = $this->db->get();
+  return $s->result();
+}
+
+public function borrar($param)
+{
+  $this->db->where('id_admin', $param);
+ $this->db->delete('admin');
+// echo $param;
+}
 
 }
  ?>

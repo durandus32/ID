@@ -7,7 +7,7 @@
       </div>
       <!-- /.box-header -->
       <!-- form start -->
-      <form class="form-horizontal" action="<?php echo base_url();?>administrador/CAgregar/agregar" method="post">
+      <form class="form-horizontal" action="<?php echo base_url();?>administrador/Cadmin/agregar" method="post">
         <div class="box-body">
           <div class="form-group">
             <label  class="col-sm-3 control-label">Nombre de usuario</label>

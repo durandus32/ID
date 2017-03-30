@@ -89,7 +89,7 @@
             Agregar</a></li>
           <li><a href="<?php echo base_url();?>administrador/CUpdate"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
             Modificar Perfil</a></li>
-          <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i>
+          <li><a href="<?php echo base_url();?>administrador/Cdeladmin"><i class="fa fa-trash-o" aria-hidden="true"></i>
             Eliminar</a></li>
           <li><a href="#"><i class="fa fa-table" aria-hidden="true"></i>
             Todos los Administradores</a></li>
@@ -98,10 +98,8 @@
     </ul>
 
   </section>
-
   <!-- /.sidebar -->
 </aside>
-
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
 <div class="content">

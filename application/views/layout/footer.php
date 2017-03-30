@@ -48,8 +48,8 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url()?>assets/dist/js/demo.js"></script>
 <!--Java script for class cliente  -->
-<?php if ($this->uri->segment(2)=='Ccliente'||$this->uri->segment(2)=='Cupdcliente') {?>
-<script src="<?php echo base_url()?>js/cliente.js"></script>
+<?php if ($this->uri->segment(2)=='Cdeladmin') {?>
+<script src="<?php echo base_url()?>js/admin.js"></script>
 
 <?php }?>
 <?php if ($this->uri->segment(2)=='Cmosempresa') {?>
