@@ -61,7 +61,10 @@
         <ul class="nav navbar-nav">
 
           <div class="div-button-cerrar">
-        <button type="button" class="btn btn-secondary">Cerrar Sesion</button>
+            <form action="<?php echo base_url();?>Clogin/cerrarSesion" method="post">
+              <button type="submit" class="btn btn-secondary">Cerrar Sesion</button>
+            </form>
+
           </div>
 
           <!-- User Account: style can be found in dropdown.less -->
