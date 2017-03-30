@@ -7,7 +7,7 @@ class Mlogin extends CI_Model
   public function ingresar($usu, $pass)
   {
     $this->db->SELECT('id_admin, userName, nombre, apellido');
-    $this->db->FROM('Admin');
+    $this->db->FROM('admin');
     $this->db->WHERE('userName = ',$usu);
     $this->db->WHERE('password = ',$pass);
 
@@ -28,6 +28,9 @@ class Mlogin extends CI_Model
     }
 
   }
+
+
+
 }
 
  ?>
