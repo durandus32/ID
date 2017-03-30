@@ -87,7 +87,7 @@
           <li ><a href="<?php echo base_url();?>administrador/CAgregar">
             <i class="fa fa-plus" aria-hidden="true"></i>
             Agregar</a></li>
-          <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+          <li><a href="<?php echo base_url();?>administrador/CUpdate"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
             Modificar Perfil</a></li>
           <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i>
             Eliminar</a></li>
