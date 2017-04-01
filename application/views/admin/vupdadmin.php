@@ -3,11 +3,11 @@
     <!-- Horizontal Form -->
     <div class="box box-info">
       <div class="box-header with-border">
-        <h3 class="box-title">Agregar Nuevo Administrador</h3>
+        <h3 class="box-title">Modificar Datos Administrador</h3>
       </div>
       <!-- /.box-header -->
       <!-- form start -->
-      <form class="form-horizontal" action="<?php echo base_url();?>administrador/Cadmin/agregar" method="post">
+      <form class="form-horizontal" action="<?php echo base_url();?>administrador/Cadmin/modificar" method="post">
         <div class="box-body">
           <div class="form-group">
             <label  class="col-sm-3 control-label">Nombre de usuario</label>
@@ -35,10 +35,10 @@
               <input type="text" class="form-control" name="txtApellido" placeholder="Ingrese sus apellidos" >
             </div>
           </div>
-
+          <p class=""><?php echo $mensaje ?></p>
           <div class="form-group">
               <div class="col-sm-9 pull-right">
-              <button type="submit" class="btn btn-primary">Agregar</button>
+              <button type="submit" class="btn btn-primary">Modificar</button>
             </div>
 
           </div>
