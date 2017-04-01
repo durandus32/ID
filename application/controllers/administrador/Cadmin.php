@@ -16,6 +16,7 @@ function agregar()
   $param['nombre']= $this->input->post('txtNombre');
   $param['apellido']= $this->input->post('txtApellido');
   $this->Madmin->agregar($param);
+  redirect('administrador/CAgregar');
 
 }
 
@@ -47,6 +48,12 @@ public function borrar()
 public function getUserNames()
   {
     $resultado = $this->Madmin->getUserNames();
+    echo json_encode($resultado);
+  }
+
+  public function getTadmin()
+  {
+    $resultado = $this->Madmin->getAdmin();
     echo json_encode($resultado);
   }
 public function cargarVista($data)

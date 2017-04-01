@@ -5,22 +5,26 @@
   <div class="pull-right hidden-xs">
     <b>Version</b> 0.0.1
   </div>
-  <strong>Copyright &copy; 2017 <a href="#"></a>SN</strong> Todos los derechos reservados :).
+  <strong>Copyright &copy; 2017 <a href="#"></a>SN</strong> Todos los derechos reservados :|.
 </footer>
 </div>
 <!-- ./wrapper -->
-
+<!-- jQuery 2.2.3 -->
+<script src="<?php echo base_url()?>assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- jQuery 2.2.3 -->
 <script src="<?php echo base_url()?>assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- DataTables -->
+<script src="<?php echo base_url()?>assets/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url()?>assets/plugins/datatables/dataTables.bootstrap.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script>
 <!-- Bootstrap 3.3.6 -->
 <script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
-<!-- Morris.js charts -->
+<!-- Morrisjs charts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script src="<?php echo base_url()?>assets/plugins/morris/morris.min.js"></script>
 <!-- Sparkline -->
@@ -47,23 +51,12 @@
 <script src="<?php echo base_url()?>assets/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url()?>assets/dist/js/demo.js"></script>
-<!--Java script for class cliente  -->
+<!--Java script for class-->
 <?php if ($this->uri->segment(2)=='Cdeladmin') {?>
 <script src="<?php echo base_url()?>js/admin.js"></script>
-
 <?php }?>
-<?php if ($this->uri->segment(2)=='Cmosempresa') {?>
-<script src="<?php echo base_url()?>js/empresas.js"></script>
-
+<?php if ($this->uri->segment(2)=='Cmosadmin') {?>
+<script src="<?php echo base_url()?>js/administradores.js"></script>
 <?php }?>
-<script>
-  $(function () {
-    //Date picker
-    $('#datepicker').datepicker({
-      autoclose: true
-    });
-
-  });
-</script>
 </body>
 </html>

@@ -91,7 +91,7 @@
             Modificar Perfil</a></li>
           <li><a href="<?php echo base_url();?>administrador/Cdeladmin"><i class="fa fa-trash-o" aria-hidden="true"></i>
             Eliminar</a></li>
-          <li><a href="#"><i class="fa fa-table" aria-hidden="true"></i>
+          <li><a href="<?php echo base_url();?>administrador/Cmosadmin"><i class="fa fa-table" aria-hidden="true"></i>
             Todos los Administradores</a></li>
         </ul>
       </li>

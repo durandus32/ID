@@ -69,6 +69,13 @@ public function getUserNames()
   $s = $this->db->get();
   return $s->result();
 }
+public function getAdmin()
+{
+  $this->db->SELECT('id_admin, userName, password, nombre, apellido');
+  $this->db->FROM('admin');
+  $s = $this->db->get();
+  return $s->result();
+}
 
 public function borrar($param)
 {
